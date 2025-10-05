@@ -28,10 +28,10 @@ class Livro {
     }
 
     livroLido(): void {
-        if (!this.lido === false) {
-            console.log("O livro "+this.titulo+" foi lido.")
+        if (this.lido === false) {
+        console.log("O livro " + this.titulo + " não foi lido.");
         } else {
-            console.log("O livro ",this.titulo," não foi lido.")
+        console.log("O livro " + this.titulo + " foi lido.");
         }
     }
 
@@ -40,17 +40,12 @@ class Livro {
         console.log("Título: "+this.titulo)
         console.log("Autor: "+this.autor)
         console.log("Páginas: "+this.paginas)
-        console.log("Lido: "+this.lido)
-        if (this.lido === true) {
-            console.log("Sim")
-        } else {
-            console.log("Não")
-        }
+        console.log("Lido: " + (this.lido ? "Sim" : "Não"))
     }
 
 }
 
 const livro = new Livro("Crime e Castigo", "Dostoievski", 535, false)
-console.log("O livro "+livro.getAutor()+" do autor "+livro.getAutor()+", que contém "+livro.getPaginas()+" paginas, foi lido?")
-livro.livroLido()
+console.log("O livro "+livro.getTitulo()+" do autor "+livro.getAutor()+", que contém "+livro.getPaginas()+" páginas, foi lido?")
 livro.statusLivro()
+livro.livroLido()
