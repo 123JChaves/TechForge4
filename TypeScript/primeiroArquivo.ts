@@ -1,6 +1,8 @@
-function ola(nome: string) {
-    return "Olá, " + nome;
+function Hello(nome: string) {
+    return "Hello "+nome;
 }
 
-let nome: string = "Mundo!";
-document.body.innerHTML = ola(nome);
+let nome: string = "World";
+document.body.innerHTML = Hello(nome);
+console.log(Hello(nome));
+alert(Hello(nome));

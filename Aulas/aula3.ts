@@ -16,7 +16,7 @@ type Endereco = {
 }
 
 function getEndereco(endereco: Endereco): string {
-    return `${endereco.rua}, ${endereco.numero} - ${endereco.cidade}`
+    return `Rua ${endereco.rua}, ${endereco.numero} - ${endereco.cidade}`
 }
 
 console.log(getEndereco({

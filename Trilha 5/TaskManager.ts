@@ -1,4 +1,4 @@
-abstract class TaskMenager{
+abstract class TaskManager{
     
     abstract addTask(task: string): void;
 
@@ -6,7 +6,7 @@ abstract class TaskMenager{
 
 }
 
-class Project extends TaskMenager{
+class Project extends TaskManager{
     private task: string[];
 
     constructor(task: string[]) {
@@ -22,7 +22,7 @@ class Project extends TaskMenager{
     }
 }
 
-class DailyTask extends TaskMenager{
+class DailyTask extends TaskManager{
     private task: string[];
 
     constructor(task: string[]) {

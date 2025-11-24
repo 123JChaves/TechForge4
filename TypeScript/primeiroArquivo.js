@@ -1,6 +1,7 @@
-function ola(nome) {
-    return "Olá, " +nome+".";
+function Hello(nome) {
+    return "Hello " + nome;
 }
-
-var pessoa = "Maria das Dores";
-document.body.innerHTML = ola(pessoa);
+var nome = "World";
+document.body.innerHTML = Hello(nome);
+console.log(Hello(nome));
+alert(Hello(nome));
